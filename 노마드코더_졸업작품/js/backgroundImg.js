@@ -1,4 +1,4 @@
-const images = ["짱구.png", "짱구2.png", "스누피.png"];
+const images = ["짱구.jpg", "짱구2.png", "스누피.png"];
 
 function setImage() {
   const chosenImage = images[Math.floor(Math.random() * images.length)];
