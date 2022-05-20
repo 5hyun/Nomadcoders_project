@@ -9,8 +9,8 @@ function onGeoOk(position) {
     .then((data) => {
       const weather = document.querySelector("#weather span:first-child");
       const city = document.querySelector("#weather span:last-child");
-      city.innerText = data.name;
-      weather.innerText = `${data.weather[0].main} / ${data.main.temp}`;
+      city.innerText = `내 지역: ${data.name}`;
+      weather.innerText = `오늘 날씨: ${data.weather[0].main}`;
     }); //promise는 당장 뭔가 일어나지 않고 시간이 좀 걸린 뒤 일어난다.
   //url에 나오는 모든 내용이 JSON이다.
 }
